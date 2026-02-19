@@ -1,0 +1,23 @@
+diff --git a/gui/vite.config.ts b/gui/vite.config.ts
+index a09fed7b..d20ee3aa 100644
+--- a/gui/vite.config.ts
++++ b/gui/vite.config.ts
+@@ -6,15 +6,10 @@ import path from 'path';
+ import { visualizer } from 'rollup-plugin-visualizer';
+ import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh';
+ 
+-const commitHash = execSync('git rev-parse --verify --short HEAD').toString().trim();
+-const versionTag = execSync('git --no-pager tag --sort -taggerdate --points-at HEAD')
+-  .toString()
+-  .split('\n')[0]
+-  .trim();
++const commitHash = 'nixos';
++const versionTag = '@version@';
+ // If not empty then it's not clean
+-const gitCleanString = execSync('git status --porcelain').toString();
+-const gitClean = gitCleanString ? false : true;
+-if (!gitClean) console.log('Git is dirty because of:\n' + gitCleanString);
++const gitClean = true;
+ 
+ console.log(`version is ${versionTag || commitHash}${gitClean ? '' : '-dirty'}`);
+ 
