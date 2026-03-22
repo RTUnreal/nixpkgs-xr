@@ -22,25 +22,25 @@
   };
   envision-unwrapped = {
     pname = "envision-unwrapped";
-    version = "f036b357d54fa7c4ca33bcdb11c6cd06afd1dd80";
+    version = "98004883360d7e69ecbd188987f93200393d7346";
     src = fetchgit {
       url = "https://gitlab.com/gabmus/envision.git";
-      rev = "f036b357d54fa7c4ca33bcdb11c6cd06afd1dd80";
+      rev = "98004883360d7e69ecbd188987f93200393d7346";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-rmlYiVCh+vECf6RE8B4W3FX2AWArpwxPm9kfH0CEHYw=";
+      sha256 = "sha256-W4d8bkroLohEc1VlqLJk4xeHGAtJ1yE0yWn5kP5yx8Y=";
     };
     extract = {
-      "Cargo.lock" = ./. + "/sha256-rmlYiVCh+vECf6RE8B4W3FX2AWArpwxPm9kfH0CEHYw=/Cargo.lock";
+      "Cargo.lock" = ./. + "/sha256-W4d8bkroLohEc1VlqLJk4xeHGAtJ1yE0yWn5kP5yx8Y=/Cargo.lock";
     };cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-rmlYiVCh+vECf6RE8B4W3FX2AWArpwxPm9kfH0CEHYw=/Cargo.lock";
+      lockFile = ./. + "/sha256-W4d8bkroLohEc1VlqLJk4xeHGAtJ1yE0yWn5kP5yx8Y=/Cargo.lock";
       outputHashes = {
         "libmonado-1.6.0" = "sha256-GsICjkkwG9EJDIX8qwj6mE5QTfvisQdv5GuPCqhQxvg=";
       };
     };
-    date = "2026-03-05";
+    date = "2026-03-21";
   };
   index_camera_passthrough = {
     pname = "index_camera_passthrough";
@@ -76,31 +76,31 @@
   };
   lovr-playspace = {
     pname = "lovr-playspace";
-    version = "c37f4e535b27d48e84b98d118fcf4bf4ca00e8f3";
+    version = "31c530d5be0ef435af9a2ff9a8eb00849b4bad8b";
     src = fetchgit {
       url = "https://github.com/SpookySkeletons/lovr-playspace.git";
-      rev = "c37f4e535b27d48e84b98d118fcf4bf4ca00e8f3";
+      rev = "31c530d5be0ef435af9a2ff9a8eb00849b4bad8b";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-RU4IBVhFAMertztn8vfsaAvoQiHuIsHz07RFOrohtIA=";
+      sha256 = "sha256-F9W8h8UbIbVDaAY+etH16S5vrsexvbJ1EsLSrOB2DMU=";
     };
-    date = "2026-01-26";
+    date = "2026-03-18";
   };
   monado = {
     pname = "monado";
-    version = "7ff112faf7ea0104a78e9389f1a942716d71af18";
+    version = "ef152c973b94a313e1ba9552162818b5151ac671";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "7ff112faf7ea0104a78e9389f1a942716d71af18";
+      rev = "ef152c973b94a313e1ba9552162818b5151ac671";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-R7xVFd44pMAc/nHjowbFWDtHXGSCJ9XNyJtMhU1d3S4=";
+      sha256 = "sha256-M0SQMu1rgY++a+4r0DK//ralFEO5w7I3UrgLecoLO+A=";
     };
-    date = "2026-03-17";
+    date = "2026-03-20";
   };
   opencomposite = {
     pname = "opencomposite";
@@ -177,50 +177,50 @@
   };
   wayvr = {
     pname = "wayvr";
-    version = "d9f89faf33e4ed95b3d3dc7b803bb46e2adfc59a";
+    version = "b0bbc25083c1430fc4f43c109002865b5993bddc";
     src = fetchgit {
       url = "https://github.com/wlx-team/wayvr.git";
-      rev = "d9f89faf33e4ed95b3d3dc7b803bb46e2adfc59a";
+      rev = "b0bbc25083c1430fc4f43c109002865b5993bddc";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-tTj8ZXaYmhn/DYhIBcxFIzm+YjoZ6RHGVLfBWfv8uVk=";
+      sha256 = "sha256-ttMSub9xcs17c2GFUWaq2EvHsBalYTQUI6ofcPdxgJw=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-tTj8ZXaYmhn_DYhIBcxFIzm+YjoZ6RHGVLfBWfv8uVk=/Cargo.lock";
+      lockFile = ./. + "/sha256-ttMSub9xcs17c2GFUWaq2EvHsBalYTQUI6ofcPdxgJw=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
-        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
+        "libspa-0.8.0" = "sha256-5lfjyCPIcT+pJs8TQfLCZuBBJJBc6OPWCVlI6sT0mNc=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-03-16";
+    date = "2026-03-20";
   };
   wivrn = {
     pname = "wivrn";
-    version = "caa191ff06d0945f539d3789acca5f81f30dcf48";
+    version = "a491561271cdb0c2a7332ff91caa5a040b2bf30a";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "caa191ff06d0945f539d3789acca5f81f30dcf48";
+      rev = "a491561271cdb0c2a7332ff91caa5a040b2bf30a";
       fetchSubmodules = false;
-      sha256 = "sha256-gpmYIbH98mjqWflvydPtPqoY+JFOCUN537J6ZbG+hMM=";
+      sha256 = "sha256-RLpcefoH/4ahS/XlYFLoNW5tx/nDRF/iMF1VfIQQz80=";
     };
-    date = "2026-03-17";
+    date = "2026-03-20";
   };
   wivrn-monado = {
     pname = "wivrn-monado";
-    version = "ee655a920cb4b50bafa2af2c92333a503e40cae6";
+    version = "ef152c973b94a313e1ba9552162818b5151ac671";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "ee655a920cb4b50bafa2af2c92333a503e40cae6";
+      rev = "ef152c973b94a313e1ba9552162818b5151ac671";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-aIHry5C30pZVIkB5fptJ0Ncbmg8EKf0M7evB4IJZEI0=";
+      sha256 = "sha256-M0SQMu1rgY++a+4r0DK//ralFEO5w7I3UrgLecoLO+A=";
     };
   };
   xrbinder = {
